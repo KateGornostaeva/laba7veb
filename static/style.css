@@ -8,7 +8,7 @@ body{
 }
 
 .calc_container {
-    width: 524px;
+    width: 500px;
     align-items: center;
 }
 
@@ -42,10 +42,8 @@ body{
     border-radius: 15px;
     background-color: #ffa6e9;
     cursor: pointer;
-
     font-size: 30px;
-    box-shadow: 2px 3px 2px #000000; 
-
+    box-shadow: 2px 3px 2px #000000; /*тени кнопки*/
     width: 80px;
     height: 80px;
     margin: 5px;
@@ -61,12 +59,4 @@ body{
 
 .result {
     background-color: #d742a0;
-}
-
-.key:hover {
-    opacity: 0.9;
-}
-
-.key:active {
-    box-shadow: 1px 1px 2px #000000; 
 }
