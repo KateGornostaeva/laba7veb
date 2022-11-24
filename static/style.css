@@ -1,29 +1,72 @@
 body{
-    font-family: 'PT Sans Narrow', sans-serif;
     background-color: #fee6c4;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:justify; /*выравнивание текста*/
+    margin:0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.main{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align:justify; /*выравнивание текста*/
+.calc_container {
+    width: 524px;
+    align-items: center;
 }
 
-table{
-    float:right;
-    margin:  1px 1px 1px 1px;
-    width: 900px; /* Ширина таблицы */
-    border-collapse: collapse; /* Убираем двойные линии между ячейками */
-    border: 3px solid #fee6c4; /* Параметры рамки */
+.table_resview {
+    background-color: #ffa6e9;
+    text-align: right;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    color: #000000;
+    font-size: 34px;
+    border-radius: 15px;
+    padding: 0 40px;
 }
 
-td, th {
-    padding: 3px; /* Поля вокруг содержимого таблицы */
-    border: 2px solid #3e2d26; /* Параметры рамки */
+.digits, .other {
+    background-color: #65264e;
+    border-radius: 15px;
 }
 
+.digits {
+    width: 290px;
+}
+
+.other {
+    width: 200px;
+}
+
+.key {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffa6e9;
+    cursor: pointer;
+
+    font-size: 30px;
+    box-shadow: 2px 3px 2px #000000; 
+
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+}
+
+.operation, .bracket {
+    background-color: #dc7dd4;
+}
+
+.clear {
+    background-color: #e972d3;
+}
+
+.result {
+    background-color: #d742a0;
+}
+
+.key:hover {
+    opacity: 0.9;
+}
+
+.key:active {
+    box-shadow: 1px 1px 2px #000000; 
+}
