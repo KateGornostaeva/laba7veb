@@ -1,0 +1,119 @@
+header{
+    background-color: #a6d3e2;
+    top: 0px;
+    margin-left: auto; /* устанавливает внешний отступ слева от элемента*/
+    margin-right: auto;
+    padding-left: 10px; /* Поля вокруг текста */
+    padding-right: 5px;
+}
+
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #fee6c4;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; /*выравнивание текста*/
+}
+
+.main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; /*выравнивание текста*/
+}
+
+form{
+    background-color: #b6dbe7;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    padding: 3px;
+    text-align:center;
+}
+
+/*
+footer{
+    background-color: #88b6c5;
+    font-size: 18px;
+    position: fixed; /* Фиксированное положение *
+    left: 0; bottom: 0; /* Левый нижний угол *
+    padding-left: 10px; /* Поля вокруг текста *
+    width: 100%}
+*/
+
+footer{
+    background-color: #88b6c5;
+    font-size: 18px;
+    position: static; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding-left: 5px; /* Поля вокруг текста */
+    width: 100%
+    
+}
+
+
+h1, h2, h3, p, td{
+    color: #3e2d26;
+}
+
+h1{
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.img_table{
+    border-radius: 50%; /*закругление углов картинки*/
+}
+
+.img_cat{
+    border-radius: 10%;
+    width: 300;
+}
+
+table{
+    float:right;
+    margin:  1px 1px 1px 1px;
+    width: 900px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 3px solid #fee6c4; /* Параметры рамки */
+}
+
+td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 2px solid #3e2d26; /* Параметры рамки */
+}
+
+#catalog_cat{
+    font-size: 40px;
+    color: #000;
+}
+
+#main_search{
+    font-size: 25px;
+    text-align: right;
+    color: #000;
+}
+
+A{
+    color: #40859c;
+    text-decoration: none;
+}
+
+A:visited{
+    color: #52409c;
+    text-decoration: none;
+}
+
+A:active{
+    color: #9c4040;
+    text-decoration: none;
+}
