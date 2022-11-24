@@ -1,0 +1,29 @@
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color: #fee6c4;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; /*выравнивание текста*/
+}
+
+.main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:justify; /*выравнивание текста*/
+}
+
+table{
+    float:right;
+    margin:  1px 1px 1px 1px;
+    width: 900px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+    border: 3px solid #fee6c4; /* Параметры рамки */
+}
+
+td, th {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 2px solid #3e2d26; /* Параметры рамки */
+}
+
