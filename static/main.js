@@ -97,16 +97,16 @@ function compile(str) {
 
 let value;
 function evaluate(value) {
-    var array = String(value).split(' ');
+    var array = String(value).split(' '); //делаем из строчки массив
     let i = 0;
     let otvet;
     while (i < array.length){
         if (array[i] == '*'){
-            let x2 = Number(array[i-1]);
-            let x1 =  Number(array[i-2]);
-            otvet = x1 * x2;
-            array.splice(i-2, 3, otvet)
-            i=0;
+            let x2 = Number(array[i-1]); // идет вперед и когда видит вместо чисел знак, возвращается к числу(i-1) и из строки делает число
+            let x1 =  Number(array[i-2]);//то же самое
+            otvet = x1 * x2; //расставляем в нужном порядке для подсчета
+            array.splice(i-2, 3, otvet) // удаляет с помощью splice три элемента, которыее ранее посчитал и заменят их на ответ
+            i=0; //обнуляет указатель массива, переставляя обратно на 0
         }
         if (array[i] == '/'){
             let x2 = Number(array[i-1]);
@@ -147,10 +147,6 @@ function evaluate(value) {
 //кнопкам калькулятора. По нажатию на кнопки с классами digit, operation
 //и bracket на экране (элемент с классом screen) должны
 //появляться соответствующие нажатой кнопке символы.
-//По нажатию на кнопку с классом clear содержимое экрана должно очищаться.
-//По нажатию на кнопку с классом result на экране должен появиться 
-//результат вычисления введённого выражения с точностью до двух знаков 
-//после десятичного разделителя (точки). 
 
 //Воспользуйтесь механизмом делегирования событий, чтобы не назначать 
 //обработчик для каждой кнопки в отдельности.
@@ -164,15 +160,15 @@ function clickHandler() {
         if(!event.target.classList.contains('key')) return;
         value = event.target.innerText;
     
-        switch(value) {
-            case 'C':
+        switch(value) { //выбор из вариантов (вместо if else)
+            case 'C'://при нажатии "С" в поле заменяется все на пустую строку(очищаеться)
                 result.innerText = '';
                 break;  
-            case '=':
+            case '='://при нажатии заменияет вводимые числа на результат вычислений с точностью до двух знаков после "."
                 evaluate(compile(result.innerText));
                 break;      
             default:
-                result.innerText += value;
+                result.innerText += value; //если "=" или "с" не нажимается, то добавляется нажатая кнопка (продолжается набор выражения)
         }
     });
 }
